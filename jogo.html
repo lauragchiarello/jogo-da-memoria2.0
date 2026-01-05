@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="image/mini_fdevs.png" >
+    <title>FDevs Game</title>
+</head>
+
+
+<body>
+    <!--Menu navegador-->
+    <nav>
+        <a href="index.html"><img src="image/logo.svg" alt="logo FDevs"></a>
+        <div class="posicao-nav">
+           
+            <a id="tutorial" href="tutorial.html">Tutorial</a>
+        </div>
+    </nav>
+<!--Corpo do jogo-->
+    <main > 
+        <div class="pagina-jogo">
+            <div id="loading-overlay"></div>
+            <div id="modal-vitoria">
+                <!--conteudo modal vitória-->
+            </div>
+            <div class="container-jogo">
+                <div id="placar">
+                    <div id="result"><h3></h3></div>
+                    <div id="contagemErro"><h3></h3></div>
+                </div>
+                <div class="board"></div>
+                <div class="alinhar-botao">
+                    <button class="botao" id="resetarJogo">Resetar Jogo</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
