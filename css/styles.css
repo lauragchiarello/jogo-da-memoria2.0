@@ -108,8 +108,8 @@ h1{
 }
 
 .imgcard{
-    width: 110px;
-    height:110px;
+    width: clamp(70px, 18vw, 110px);
+    height: clamp(70px, 18vw, 110px);
     margin:5px;
     border-radius: 10px;
     cursor: pointer;
@@ -126,8 +126,10 @@ h1{
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    padding: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -274,4 +276,43 @@ h1{
     padding: 20px 100px;
     background-color: rgb(106, 106, 106);
     border-radius:10px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .janela {
+        min-width: auto;
+        width: 90%;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .pagina-jogo {
+        padding: 20px 10px;
+    }
+
+    .container-jogo {
+        gap: 1.5rem;
+    }
+
+    #placar {
+        font-size: 14px;
+    }
+
+    .manual-btn,
+    .navigation-auto div {
+        padding: 4px;
+    }
 }
